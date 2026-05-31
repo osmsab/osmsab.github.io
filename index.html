@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1746599627710664" crossorigin="anonymous"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>عالم الذكاء الاصطناعي | أفضل أدوات AI مجاناً</title>
+<title>AI Tools Hub | Best Free AI Tools</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Tajawal:wght@300;400;500;700;900&display=swap');
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Tajawal',sans-serif;background:#020817;color:#e2e8f0;overflow-x:hidden}
+body{font-family:'Inter',sans-serif;background:#020817;color:#e2e8f0;overflow-x:hidden}
+body.ar{font-family:'Tajawal',sans-serif;direction:rtl}
 
-/* animated background */
 .bg-animation{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;overflow:hidden}
 .bg-animation span{position:absolute;display:block;width:2px;height:2px;background:rgba(99,179,237,0.5);border-radius:50%;animation:float linear infinite}
-.bg-animation span:nth-child(1){left:10%;animation-duration:8s;animation-delay:0s;width:3px;height:3px}
+.bg-animation span:nth-child(1){left:10%;animation-duration:8s;width:3px;height:3px}
 .bg-animation span:nth-child(2){left:20%;animation-duration:12s;animation-delay:2s}
 .bg-animation span:nth-child(3){left:35%;animation-duration:9s;animation-delay:4s;width:4px;height:4px;background:rgba(167,139,250,0.6)}
 .bg-animation span:nth-child(4){left:50%;animation-duration:11s;animation-delay:1s}
@@ -21,49 +21,46 @@ body{font-family:'Tajawal',sans-serif;background:#020817;color:#e2e8f0;overflow-
 .bg-animation span:nth-child(6){left:75%;animation-duration:13s;animation-delay:5s}
 .bg-animation span:nth-child(7){left:85%;animation-duration:10s;animation-delay:2s;width:4px;height:4px;background:rgba(251,191,36,0.4)}
 .bg-animation span:nth-child(8){left:90%;animation-duration:8s;animation-delay:6s}
-@keyframes float{0%{bottom:-10px;opacity:0;transform:translateX(0)}10%{opacity:1}90%{opacity:1}100%{bottom:110%;opacity:0;transform:translateX(100px)}}
+@keyframes float{0%{bottom:-10px;opacity:0}10%{opacity:1}90%{opacity:1}100%{bottom:110%;opacity:0;transform:translateX(100px)}}
 
-/* glowing orbs */
 .orb{position:fixed;border-radius:50%;filter:blur(80px);opacity:0.15;animation:orbMove 15s ease-in-out infinite;z-index:0}
 .orb1{width:500px;height:500px;background:radial-gradient(circle,#6366f1,transparent);top:-100px;right:-100px}
 .orb2{width:400px;height:400px;background:radial-gradient(circle,#06b6d4,transparent);bottom:-100px;left:-100px;animation-delay:5s}
 .orb3{width:300px;height:300px;background:radial-gradient(circle,#8b5cf6,transparent);top:50%;left:50%;animation-delay:10s}
 @keyframes orbMove{0%,100%{transform:translate(0,0)}33%{transform:translate(30px,-30px)}66%{transform:translate(-20px,20px)}}
 
-/* navbar */
 nav{position:fixed;top:0;width:100%;z-index:1000;background:rgba(2,8,23,0.8);backdrop-filter:blur(20px);border-bottom:1px solid rgba(99,102,241,0.2);padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center}
 .logo{font-size:1.5rem;font-weight:900;background:linear-gradient(135deg,#6366f1,#06b6d4,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.nav-right{display:flex;align-items:center;gap:1.5rem}
 .nav-links{display:flex;gap:2rem;list-style:none}
 .nav-links a{color:#94a3b8;text-decoration:none;font-size:0.95rem;transition:color 0.3s}
 .nav-links a:hover{color:#6366f1}
 
-/* hero */
+.lang-toggle{background:rgba(99,102,241,0.15);border:1px solid rgba(99,102,241,0.3);color:#a5b4fc;padding:0.4rem 1rem;border-radius:50px;cursor:pointer;font-size:0.85rem;transition:all 0.3s;font-family:inherit}
+.lang-toggle:hover{background:rgba(99,102,241,0.3)}
+
 .hero{position:relative;z-index:1;min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:8rem 2rem 4rem}
 .hero-badge{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.3);border-radius:50px;padding:0.4rem 1.2rem;font-size:0.85rem;color:#a5b4fc;margin-bottom:2rem;animation:pulse 2s ease-in-out infinite}
 @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(99,102,241,0.3)}50%{box-shadow:0 0 20px 5px rgba(99,102,241,0.2)}}
 .hero h1{font-size:clamp(2.5rem,6vw,5rem);font-weight:900;line-height:1.1;margin-bottom:1.5rem}
 .gradient-text{background:linear-gradient(135deg,#ffffff 0%,#a5b4fc 40%,#06b6d4 70%,#34d399 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero p{font-size:1.2rem;color:#94a3b8;max-width:600px;line-height:1.8;margin-bottom:3rem}
-.hero-stats{display:flex;gap:3rem;margin-top:1rem}
+.hero-stats{display:flex;gap:3rem}
 .stat{text-align:center}
 .stat-num{font-size:2rem;font-weight:900;background:linear-gradient(135deg,#6366f1,#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .stat-label{font-size:0.85rem;color:#64748b}
 
-/* scroll indicator */
 .scroll-indicator{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:0.5rem;color:#475569;font-size:0.8rem;animation:bounce 2s ease-in-out infinite}
 @keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
 .scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,#6366f1,transparent)}
 
-/* categories */
-.categories{position:relative;z-index:1;padding:2rem;display:flex;justify-content:center;flex-wrap:wrap;gap:1rem;margin-bottom:1rem}
-.cat-btn{background:rgba(15,23,42,0.8);border:1px solid rgba(99,102,241,0.2);color:#94a3b8;padding:0.6rem 1.5rem;border-radius:50px;cursor:pointer;font-family:'Tajawal',sans-serif;font-size:0.9rem;transition:all 0.3s}
+.categories{position:relative;z-index:1;padding:2rem;display:flex;justify-content:center;flex-wrap:wrap;gap:1rem}
+.cat-btn{background:rgba(15,23,42,0.8);border:1px solid rgba(99,102,241,0.2);color:#94a3b8;padding:0.6rem 1.5rem;border-radius:50px;cursor:pointer;font-size:0.9rem;transition:all 0.3s;font-family:inherit}
 .cat-btn:hover,.cat-btn.active{background:rgba(99,102,241,0.2);border-color:#6366f1;color:#a5b4fc}
 
-/* tools grid */
 .section{position:relative;z-index:1;padding:2rem 2rem 6rem;max-width:1400px;margin:0 auto}
-.section-title{text-align:center;font-size:2rem;font-weight:700;margin-bottom:3rem;color:#f1f5f9}
 .tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem}
-.tool-card{background:rgba(15,23,42,0.6);border:1px solid rgba(99,102,241,0.15);border-radius:20px;padding:1.8rem;backdrop-filter:blur(10px);transition:all 0.4s cubic-bezier(0.175,0.885,0.32,1.275);cursor:pointer;position:relative;overflow:hidden}
+.tool-card{background:rgba(15,23,42,0.6);border:1px solid rgba(99,102,241,0.15);border-radius:20px;padding:1.8rem;backdrop-filter:blur(10px);transition:all 0.4s cubic-bezier(0.175,0.885,0.32,1.275);position:relative;overflow:hidden}
 .tool-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(99,102,241,0.5),transparent);transform:translateX(-100%);transition:transform 0.6s}
 .tool-card:hover::before{transform:translateX(100%)}
 .tool-card:hover{transform:translateY(-8px);border-color:rgba(99,102,241,0.5);box-shadow:0 20px 60px rgba(99,102,241,0.15)}
@@ -71,17 +68,16 @@ nav{position:fixed;top:0;width:100%;z-index:1000;background:rgba(2,8,23,0.8);bac
 .tool-card:hover .card-glow{opacity:1}
 .tool-header{display:flex;align-items:center;gap:1rem;margin-bottom:1rem}
 .tool-icon-wrap{width:50px;height:50px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0}
-.tool-meta{flex:1}
 .tool-name{font-size:1.1rem;font-weight:700;color:#f1f5f9;margin-bottom:0.2rem}
 .tool-tag{font-size:0.75rem;padding:0.2rem 0.7rem;border-radius:50px;font-weight:500}
 .tool-desc{color:#94a3b8;font-size:0.9rem;line-height:1.6;margin-bottom:1.2rem}
 .tool-footer{display:flex;justify-content:space-between;align-items:center}
 .tool-badge{font-size:0.75rem;color:#64748b}
-.tool-btn{background:linear-gradient(135deg,#6366f1,#4f46e5);color:white;border:none;padding:0.5rem 1.2rem;border-radius:10px;font-family:'Tajawal',sans-serif;font-size:0.85rem;cursor:pointer;text-decoration:none;display:inline-block;transition:all 0.3s}
+.tool-btn{background:linear-gradient(135deg,#6366f1,#4f46e5);color:white;border:none;padding:0.5rem 1.2rem;border-radius:10px;font-size:0.85rem;cursor:pointer;text-decoration:none;display:inline-block;transition:all 0.3s;font-family:inherit}
 .tool-btn:hover{transform:scale(1.05);box-shadow:0 5px 20px rgba(99,102,241,0.4)}
 
-/* footer */
 footer{position:relative;z-index:1;text-align:center;padding:3rem;border-top:1px solid rgba(99,102,241,0.1);color:#475569;font-size:0.9rem}
+@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 </style>
 </head>
 <body>
@@ -95,91 +91,104 @@ footer{position:relative;z-index:1;text-align:center;padding:3rem;border-top:1px
 <div class="orb orb3"></div>
 
 <nav>
-  <div class="logo">🤖 عالم AI</div>
-  <ul class="nav-links">
-    <li><a href="#tools">الأدوات</a></li>
-    <li><a href="#about">من نحن</a></li>
-  </ul>
+  <div class="logo">🤖 AI Tools Hub</div>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#tools" data-en="Tools" data-ar="الأدوات">Tools</a></li>
+      <li><a href="#about" data-en="About" data-ar="من نحن">About</a></li>
+    </ul>
+    <button class="lang-toggle" onclick="toggleLang()">🌐 العربية</button>
+  </div>
 </nav>
 
 <section class="hero">
-  <div class="hero-badge">✨ أكثر من 30 أداة ذكاء اصطناعي</div>
-  <h1><span class="gradient-text">مستقبل الذكاء<br>الاصطناعي بين يديك</span></h1>
-  <p>اكتشف أقوى أدوات AI مجاناً في مكان واحد — من كتابة المحتوى إلى توليد الصور والموسيقى والكود</p>
+  <div class="hero-badge" data-en="✨ 30+ Free AI Tools in One Place" data-ar="✨ أكثر من 30 أداة ذكاء اصطناعي مجانية">✨ 30+ Free AI Tools in One Place</div>
+  <h1><span class="gradient-text" data-en="The Future of AI<br>At Your Fingertips" data-ar="مستقبل الذكاء<br>الاصطناعي بين يديك">The Future of AI<br>At Your Fingertips</span></h1>
+  <p data-en="Discover the most powerful free AI tools in one place — from content writing to image generation, music, video, and code." data-ar="اكتشف أقوى أدوات AI مجاناً في مكان واحد — من كتابة المحتوى إلى توليد الصور والموسيقى والكود">Discover the most powerful free AI tools in one place — from content writing to image generation, music, video, and code.</p>
   <div class="hero-stats">
-    <div class="stat"><div class="stat-num">30+</div><div class="stat-label">أداة مجانية</div></div>
-    <div class="stat"><div class="stat-num">10</div><div class="stat-label">تصنيفات</div></div>
-    <div class="stat"><div class="stat-num">∞</div><div class="stat-label">إمكانيات</div></div>
+    <div class="stat"><div class="stat-num">30+</div><div class="stat-label" data-en="Free Tools" data-ar="أداة مجانية">Free Tools</div></div>
+    <div class="stat"><div class="stat-num">10</div><div class="stat-label" data-en="Categories" data-ar="تصنيفات">Categories</div></div>
+    <div class="stat"><div class="stat-num">∞</div><div class="stat-label" data-en="Possibilities" data-ar="إمكانيات">Possibilities</div></div>
   </div>
   <div class="scroll-indicator">
     <div class="scroll-line"></div>
-    <span>اكتشف</span>
+    <span data-en="Explore" data-ar="اكتشف">Explore</span>
   </div>
 </section>
 
-<div class="categories" id="tools">
-  <button class="cat-btn active" onclick="filterTools('all')">🌐 الكل</button>
-  <button class="cat-btn" onclick="filterTools('writing')">✍️ كتابة</button>
-  <button class="cat-btn" onclick="filterTools('image')">🎨 صور</button>
-  <button class="cat-btn" onclick="filterTools('video')">🎬 فيديو</button>
-  <button class="cat-btn" onclick="filterTools('audio')">🎵 صوت</button>
-  <button class="cat-btn" onclick="filterTools('code')">💻 كود</button>
-  <button class="cat-btn" onclick="filterTools('chat')">💬 محادثة</button>
-  <button class="cat-btn" onclick="filterTools('design')">🖌️ تصميم</button>
-  <button class="cat-btn" onclick="filterTools('productivity')">⚡ إنتاجية</button>
-  <button class="cat-btn" onclick="filterTools('research')">🔬 بحث</button>
-</div>
-
-<section class="section">
-  <div class="tools-grid" id="toolsGrid"></div>
-</section>
+<div class="categories" id="tools"></div>
+<section class="section"><div class="tools-grid" id="toolsGrid"></div></section>
 
 <footer>
-  <p>🤖 عالم الذكاء الاصطناعي — اكتشف، تعلم، ابتكر</p>
-  <p style="margin-top:0.5rem;font-size:0.8rem">جميع الأدوات مجانية ومتاحة للجميع</p>
+  <p data-en="🤖 AI Tools Hub — Discover, Learn, Create" data-ar="🤖 عالم الذكاء الاصطناعي — اكتشف، تعلم، ابتكر">🤖 AI Tools Hub — Discover, Learn, Create</p>
+  <p style="margin-top:0.5rem;font-size:0.8rem" data-en="All tools are free and available to everyone" data-ar="جميع الأدوات مجانية ومتاحة للجميع">All tools are free and available to everyone</p>
 </footer>
 
 <script>
 const tools = [
-  {name:"ChatGPT",desc:"أشهر مساعد ذكاء اصطناعي في العالم للمحادثة وكتابة المحتوى وحل المشكلات",icon:"💬",color:"#10b981",tag:"محادثة",tagColor:"rgba(16,185,129,0.15)",tagText:"#10b981",category:"chat",url:"https://chat.openai.com",badge:"مجاني"},
-  {name:"Claude",desc:"مساعد AI من Anthropic، متميز في التحليل والكتابة الإبداعية والبرمجة",icon:"🧠",color:"#f59e0b",tag:"محادثة",tagColor:"rgba(245,158,11,0.15)",tagText:"#f59e0b",category:"chat",url:"https://claude.ai",badge:"مجاني"},
-  {name:"Gemini",desc:"ذكاء اصطناعي من Google يفهم النصوص والصور والصوت معاً",icon:"♊",color:"#6366f1",tag:"محادثة",tagColor:"rgba(99,102,241,0.15)",tagText:"#6366f1",category:"chat",url:"https://gemini.google.com",badge:"مجاني"},
-  {name:"Midjourney",desc:"أقوى أداة لتوليد الصور الفنية الاحترافية بالذكاء الاصطناعي",icon:"🎨",color:"#ec4899",tag:"صور",tagColor:"rgba(236,72,153,0.15)",tagText:"#ec4899",category:"image",url:"https://midjourney.com",badge:"مدفوع"},
-  {name:"DALL-E 3",desc:"توليد صور واقعية وإبداعية من وصف نصي بسيط",icon:"🖼️",color:"#8b5cf6",tag:"صور",tagColor:"rgba(139,92,246,0.15)",tagText:"#8b5cf6",category:"image",url:"https://openai.com/dall-e-3",badge:"مجاني"},
-  {name:"Stable Diffusion",desc:"أداة مفتوحة المصدر لتوليد الصور بجودة احترافية مجاناً",icon:"🌈",color:"#06b6d4",tag:"صور",tagColor:"rgba(6,182,212,0.15)",tagText:"#06b6d4",category:"image",url:"https://stability.ai",badge:"مجاني"},
-  {name:"Suno AI",desc:"حوّل كلماتك إلى أغانٍ كاملة بصوت احترافي في ثوانٍ",icon:"🎵",color:"#f97316",tag:"صوت",tagColor:"rgba(249,115,22,0.15)",tagText:"#f97316",category:"audio",url:"https://suno.com",badge:"مجاني"},
-  {name:"ElevenLabs",desc:"تحويل النص إلى صوت بشري واقعي بأكثر من 30 لغة",icon:"🎙️",color:"#14b8a6",tag:"صوت",tagColor:"rgba(20,184,166,0.15)",tagText:"#14b8a6",category:"audio",url:"https://elevenlabs.io",badge:"مجاني"},
-  {name:"Udio",desc:"توليد موسيقى أصلية عالية الجودة من وصف نصي",icon:"🎼",color:"#a855f7",tag:"صوت",tagColor:"rgba(168,85,247,0.15)",tagText:"#a855f7",category:"audio",url:"https://udio.com",badge:"مجاني"},
-  {name:"Runway ML",desc:"تحرير الفيديو وتوليده بالذكاء الاصطناعي باحترافية عالية",icon:"🎬",color:"#ef4444",tag:"فيديو",tagColor:"rgba(239,68,68,0.15)",tagText:"#ef4444",category:"video",url:"https://runwayml.com",badge:"مجاني"},
-  {name:"Pika Labs",desc:"تحويل الصور والنصوص إلى فيديوهات متحركة مذهلة",icon:"🎥",color:"#f43f5e",tag:"فيديو",tagColor:"rgba(244,63,94,0.15)",tagText:"#f43f5e",category:"video",url:"https://pika.art",badge:"مجاني"},
-  {name:"HeyGen",desc:"إنشاء فيديوهات بالصورة الرمزية والصوت الاصطناعي",icon:"👤",color:"#0ea5e9",tag:"فيديو",tagColor:"rgba(14,165,233,0.15)",tagText:"#0ea5e9",category:"video",url:"https://heygen.com",badge:"مجاني"},
-  {name:"GitHub Copilot",desc:"مساعد البرمجة الأقوى — يكتب الكود معك تلقائياً",icon:"💻",color:"#22c55e",tag:"كود",tagColor:"rgba(34,197,94,0.15)",tagText:"#22c55e",category:"code",url:"https://github.com/features/copilot",badge:"مدفوع"},
-  {name:"Cursor",desc:"محرر كود ذكي يفهم مشروعك بالكامل ويساعدك في البرمجة",icon:"⌨️",color:"#3b82f6",tag:"كود",tagColor:"rgba(59,130,246,0.15)",tagText:"#3b82f6",category:"code",url:"https://cursor.sh",badge:"مجاني"},
-  {name:"Replit AI",desc:"برمجة ونشر تطبيقاتك مباشرة من المتصفح بمساعدة AI",icon:"🔧",color:"#f59e0b",tag:"كود",tagColor:"rgba(245,158,11,0.15)",tagText:"#f59e0b",category:"code",url:"https://replit.com",badge:"مجاني"},
-  {name:"Canva AI",desc:"تصميم منشورات ولوغوهات وعروض تقديمية بالذكاء الاصطناعي",icon:"🖌️",color:"#ec4899",tag:"تصميم",tagColor:"rgba(236,72,153,0.15)",tagText:"#ec4899",category:"design",url:"https://canva.com",badge:"مجاني"},
-  {name:"Adobe Firefly",desc:"أدوات تصميم AI من Adobe — تعديل الصور وتوليدها باحترافية",icon:"🔥",color:"#f97316",tag:"تصميم",tagColor:"rgba(249,115,22,0.15)",tagText:"#f97316",category:"design",url:"https://firefly.adobe.com",badge:"مجاني"},
-  {name:"Looka",desc:"إنشاء لوغو احترافي لعلامتك التجارية في دقائق",icon:"✨",color:"#8b5cf6",tag:"تصميم",tagColor:"rgba(139,92,246,0.15)",tagText:"#8b5cf6",category:"design",url:"https://looka.com",badge:"مدفوع"},
-  {name:"Jasper AI",desc:"كتابة محتوى تسويقي ومقالات احترافية بالذكاء الاصطناعي",icon:"✍️",color:"#10b981",tag:"كتابة",tagColor:"rgba(16,185,129,0.15)",tagText:"#10b981",category:"writing",url:"https://jasper.ai",badge:"مدفوع"},
-  {name:"Copy.ai",desc:"توليد نصوص تسويقية وإعلانات وأوصاف منتجات تلقائياً",icon:"📝",color:"#6366f1",tag:"كتابة",tagColor:"rgba(99,102,241,0.15)",tagText:"#6366f1",category:"writing",url:"https://copy.ai",badge:"مجاني"},
-  {name:"Grammarly",desc:"تصحيح الكتابة وتحسين الأسلوب بالذكاء الاصطناعي",icon:"📖",color:"#14b8a6",tag:"كتابة",tagColor:"rgba(20,184,166,0.15)",tagText:"#14b8a6",category:"writing",url:"https://grammarly.com",badge:"مجاني"},
-  {name:"Notion AI",desc:"مساعد ذكي داخل Notion لتنظيم الأفكار وكتابة الملاحظات",icon:"📋",color:"#f1f5f9",tag:"إنتاجية",tagColor:"rgba(241,245,249,0.1)",tagText:"#94a3b8",category:"productivity",url:"https://notion.so",badge:"مجاني"},
-  {name:"Otter.ai",desc:"تحويل الاجتماعات والمحادثات إلى نصوص تلقائياً",icon:"🎤",color:"#06b6d4",tag:"إنتاجية",tagColor:"rgba(6,182,212,0.15)",tagText:"#06b6d4",category:"productivity",url:"https://otter.ai",badge:"مجاني"},
-  {name:"Zapier AI",desc:"أتمتة المهام الروتينية وربط التطبيقات بالذكاء الاصطناعي",icon:"⚡",color:"#f97316",tag:"إنتاجية",tagColor:"rgba(249,115,22,0.15)",tagText:"#f97316",category:"productivity",url:"https://zapier.com",badge:"مجاني"},
-  {name:"Perplexity AI",desc:"محرك بحث ذكي يعطيك إجابات دقيقة مع المصادر",icon:"🔍",color:"#22c55e",tag:"بحث",tagColor:"rgba(34,197,94,0.15)",tagText:"#22c55e",category:"research",url:"https://perplexity.ai",badge:"مجاني"},
-  {name:"Elicit",desc:"مساعد بحث علمي يلخص الأوراق البحثية ويحللها",icon:"🔬",color:"#a855f7",tag:"بحث",tagColor:"rgba(168,85,247,0.15)",tagText:"#a855f7",category:"research",url:"https://elicit.com",badge:"مجاني"},
-  {name:"Consensus",desc:"البحث في الدراسات العلمية والحصول على إجابات موثوقة",icon:"📊",color:"#3b82f6",tag:"بحث",tagColor:"rgba(59,130,246,0.15)",tagText:"#3b82f6",category:"research",url:"https://consensus.app",badge:"مجاني"},
-  {name:"DeepL",desc:"الترجمة الأذكى في العالم — تفهم السياق والمعنى الحقيقي",icon:"🌐",color:"#0ea5e9",tag:"كتابة",tagColor:"rgba(14,165,233,0.15)",tagText:"#0ea5e9",category:"writing",url:"https://deepl.com",badge:"مجاني"},
-  {name:"Luma AI",desc:"توليد مشاهد ثلاثية الأبعاد وفيديوهات واقعية مذهلة",icon:"🌟",color:"#f43f5e",tag:"فيديو",tagColor:"rgba(244,63,94,0.15)",tagText:"#f43f5e",category:"video",url:"https://lumalabs.ai",badge:"مجاني"},
-  {name:"Character.ai",desc:"تحدث مع شخصيات ذكاء اصطناعي مخصصة وتعلم منها",icon:"🤖",color:"#8b5cf6",tag:"محادثة",tagColor:"rgba(139,92,246,0.15)",tagText:"#8b5cf6",category:"chat",url:"https://character.ai",badge:"مجاني"},
+  {name:"ChatGPT",en:"The world's most popular AI assistant for conversation, writing, and problem solving",ar:"أشهر مساعد ذكاء اصطناعي للمحادثة وكتابة المحتوى",icon:"💬",color:"#10b981",tagEn:"Chat",tagAr:"محادثة",tagColor:"rgba(16,185,129,0.15)",tagText:"#10b981",category:"chat",url:"https://chat.openai.com",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"Claude",en:"Anthropic's AI — exceptional at analysis, creative writing, and coding",ar:"مساعد AI من Anthropic، متميز في التحليل والكتابة الإبداعية",icon:"🧠",color:"#f59e0b",tagEn:"Chat",tagAr:"محادثة",tagColor:"rgba(245,158,11,0.15)",tagText:"#f59e0b",category:"chat",url:"https://claude.ai",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"Gemini",en:"Google's AI that understands text, images, and audio together",ar:"ذكاء اصطناعي من Google يفهم النصوص والصور والصوت",icon:"♊",color:"#6366f1",tagEn:"Chat",tagAr:"محادثة",tagColor:"rgba(99,102,241,0.15)",tagText:"#6366f1",category:"chat",url:"https://gemini.google.com",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"Midjourney",en:"The most powerful AI image generator for stunning artistic visuals",ar:"أقوى أداة لتوليد الصور الفنية الاحترافية",icon:"🎨",color:"#ec4899",tagEn:"Images",tagAr:"صور",tagColor:"rgba(236,72,153,0.15)",tagText:"#ec4899",category:"image",url:"https://midjourney.com",badgeEn:"Paid",badgeAr:"مدفوع"},
+  {name:"DALL-E 3",en:"Generate realistic and creative images from simple text descriptions",ar:"توليد صور واقعية وإبداعية من وصف نصي بسيط",icon:"🖼️",color:"#8b5cf6",tagEn:"Images",tagAr:"صور",tagColor:"rgba(139,92,246,0.15)",tagText:"#8b5cf6",category:"image",url:"https://openai.com/dall-e-3",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"Stable Diffusion",en:"Open-source image generation with professional quality for free",ar:"أداة مفتوحة المصدر لتوليد الصور بجودة احترافية مجاناً",icon:"🌈",color:"#06b6d4",tagEn:"Images",tagAr:"صور",tagColor:"rgba(6,182,212,0.15)",tagText:"#06b6d4",category:"image",url:"https://stability.ai",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"Suno AI",en:"Turn your words into complete professional songs in seconds",ar:"حوّل كلماتك إلى أغانٍ كاملة بصوت احترافي في ثوانٍ",icon:"🎵",color:"#f97316",tagEn:"Audio",tagAr:"صوت",tagColor:"rgba(249,115,22,0.15)",tagText:"#f97316",category:"audio",url:"https://suno.com",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"ElevenLabs",en:"Convert text to realistic human voice in 30+ languages",ar:"تحويل النص إلى صوت بشري واقعي بأكثر من 30 لغة",icon:"🎙️",color:"#14b8a6",tagEn:"Audio",tagAr:"صوت",tagColor:"rgba(20,184,166,0.15)",tagText:"#14b8a6",category:"audio",url:"https://elevenlabs.io",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"Udio",en:"Generate high-quality original music from a text description",ar:"توليد موسيقى أصلية عالية الجودة من وصف نصي",icon:"🎼",color:"#a855f7",tagEn:"Audio",tagAr:"صوت",tagColor:"rgba(168,85,247,0.15)",tagText:"#a855f7",category:"audio",url:"https://udio.com",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"Runway ML",en:"Professional AI video editing and generation in your browser",ar:"تحرير الفيديو وتوليده بالذكاء الاصطناعي باحترافية",icon:"🎬",color:"#ef4444",tagEn:"Video",tagAr:"فيديو",tagColor:"rgba(239,68,68,0.15)",tagText:"#ef4444",category:"video",url:"https://runwayml.com",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"Pika Labs",en:"Transform images and text into stunning animated videos",ar:"تحويل الصور والنصوص إلى فيديوهات متحركة مذهلة",icon:"🎥",color:"#f43f5e",tagEn:"Video",tagAr:"فيديو",tagColor:"rgba(244,63,94,0.15)",tagText:"#f43f5e",category:"video",url:"https://pika.art",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"HeyGen",en:"Create avatar videos with AI-generated voice and appearance",ar:"إنشاء فيديوهات بالصورة الرمزية والصوت الاصطناعي",icon:"👤",color:"#0ea5e9",tagEn:"Video",tagAr:"فيديو",tagColor:"rgba(14,165,233,0.15)",tagText:"#0ea5e9",category:"video",url:"https://heygen.com",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"GitHub Copilot",en:"The most powerful coding assistant — writes code with you automatically",ar:"مساعد البرمجة الأقوى — يكتب الكود معك تلقائياً",icon:"💻",color:"#22c55e",tagEn:"Code",tagAr:"كود",tagColor:"rgba(34,197,94,0.15)",tagText:"#22c55e",category:"code",url:"https://github.com/features/copilot",badgeEn:"Paid",badgeAr:"مدفوع"},
+  {name:"Cursor",en:"Smart code editor that understands your entire project",ar:"محرر كود ذكي يفهم مشروعك بالكامل ويساعدك في البرمجة",icon:"⌨️",color:"#3b82f6",tagEn:"Code",tagAr:"كود",tagColor:"rgba(59,130,246,0.15)",tagText:"#3b82f6",category:"code",url:"https://cursor.sh",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"Replit AI",en:"Code and deploy your apps directly from the browser with AI",ar:"برمجة ونشر تطبيقاتك مباشرة من المتصفح بمساعدة AI",icon:"🔧",color:"#f59e0b",tagEn:"Code",tagAr:"كود",tagColor:"rgba(245,158,11,0.15)",tagText:"#f59e0b",category:"code",url:"https://replit.com",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"Canva AI",en:"Design posts, logos, and presentations with AI assistance",ar:"تصميم منشورات ولوغوهات وعروض تقديمية بالذكاء الاصطناعي",icon:"🖌️",color:"#ec4899",tagEn:"Design",tagAr:"تصميم",tagColor:"rgba(236,72,153,0.15)",tagText:"#ec4899",category:"design",url:"https://canva.com",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"Adobe Firefly",en:"Adobe's AI design tools — edit and generate images professionally",ar:"أدوات تصميم AI من Adobe لتعديل الصور وتوليدها",icon:"🔥",color:"#f97316",tagEn:"Design",tagAr:"تصميم",tagColor:"rgba(249,115,22,0.15)",tagText:"#f97316",category:"design",url:"https://firefly.adobe.com",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"Looka",en:"Create a professional logo for your brand in minutes",ar:"إنشاء لوغو احترافي لعلامتك التجارية في دقائق",icon:"✨",color:"#8b5cf6",tagEn:"Design",tagAr:"تصميم",tagColor:"rgba(139,92,246,0.15)",tagText:"#8b5cf6",category:"design",url:"https://looka.com",badgeEn:"Paid",badgeAr:"مدفوع"},
+  {name:"Jasper AI",en:"Write marketing content and professional articles with AI",ar:"كتابة محتوى تسويقي ومقالات احترافية بالذكاء الاصطناعي",icon:"✍️",color:"#10b981",tagEn:"Writing",tagAr:"كتابة",tagColor:"rgba(16,185,129,0.15)",tagText:"#10b981",category:"writing",url:"https://jasper.ai",badgeEn:"Paid",badgeAr:"مدفوع"},
+  {name:"Copy.ai",en:"Generate marketing copy, ads, and product descriptions automatically",ar:"توليد نصوص تسويقية وإعلانات وأوصاف منتجات تلقائياً",icon:"📝",color:"#6366f1",tagEn:"Writing",tagAr:"كتابة",tagColor:"rgba(99,102,241,0.15)",tagText:"#6366f1",category:"writing",url:"https://copy.ai",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"Grammarly",en:"Fix your writing and improve your style with AI",ar:"تصحيح الكتابة وتحسين الأسلوب بالذكاء الاصطناعي",icon:"📖",color:"#14b8a6",tagEn:"Writing",tagAr:"كتابة",tagColor:"rgba(20,184,166,0.15)",tagText:"#14b8a6",category:"writing",url:"https://grammarly.com",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"Notion AI",en:"Smart assistant inside Notion for organizing ideas and notes",ar:"مساعد ذكي داخل Notion لتنظيم الأفكار والملاحظات",icon:"📋",color:"#f1f5f9",tagEn:"Productivity",tagAr:"إنتاجية",tagColor:"rgba(241,245,249,0.1)",tagText:"#94a3b8",category:"productivity",url:"https://notion.so",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"Otter.ai",en:"Automatically convert meetings and conversations to text",ar:"تحويل الاجتماعات والمحادثات إلى نصوص تلقائياً",icon:"🎤",color:"#06b6d4",tagEn:"Productivity",tagAr:"إنتاجية",tagColor:"rgba(6,182,212,0.15)",tagText:"#06b6d4",category:"productivity",url:"https://otter.ai",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"Zapier AI",en:"Automate repetitive tasks and connect apps with AI",ar:"أتمتة المهام الروتينية وربط التطبيقات بالذكاء الاصطناعي",icon:"⚡",color:"#f97316",tagEn:"Productivity",tagAr:"إنتاجية",tagColor:"rgba(249,115,22,0.15)",tagText:"#f97316",category:"productivity",url:"https://zapier.com",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"Perplexity AI",en:"Smart search engine that gives accurate answers with sources",ar:"محرك بحث ذكي يعطيك إجابات دقيقة مع المصادر",icon:"🔍",color:"#22c55e",tagEn:"Research",tagAr:"بحث",tagColor:"rgba(34,197,94,0.15)",tagText:"#22c55e",category:"research",url:"https://perplexity.ai",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"Elicit",en:"Scientific research assistant that summarizes and analyzes papers",ar:"مساعد بحث علمي يلخص الأوراق البحثية ويحللها",icon:"🔬",color:"#a855f7",tagEn:"Research",tagAr:"بحث",tagColor:"rgba(168,85,247,0.15)",tagText:"#a855f7",category:"research",url:"https://elicit.com",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"Consensus",en:"Search scientific studies and get reliable evidence-based answers",ar:"البحث في الدراسات العلمية والحصول على إجابات موثوقة",icon:"📊",color:"#3b82f6",tagEn:"Research",tagAr:"بحث",tagColor:"rgba(59,130,246,0.15)",tagText:"#3b82f6",category:"research",url:"https://consensus.app",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"DeepL",en:"The world's smartest translator — understands context and meaning",ar:"الترجمة الأذكى في العالم — تفهم السياق والمعنى الحقيقي",icon:"🌐",color:"#0ea5e9",tagEn:"Writing",tagAr:"كتابة",tagColor:"rgba(14,165,233,0.15)",tagText:"#0ea5e9",category:"writing",url:"https://deepl.com",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"Luma AI",en:"Generate stunning 3D scenes and realistic videos with AI",ar:"توليد مشاهد ثلاثية الأبعاد وفيديوهات واقعية مذهلة",icon:"🌟",color:"#f43f5e",tagEn:"Video",tagAr:"فيديو",tagColor:"rgba(244,63,94,0.15)",tagText:"#f43f5e",category:"video",url:"https://lumalabs.ai",badgeEn:"Free",badgeAr:"مجاني"},
+  {name:"Character.ai",en:"Talk with custom AI characters and learn from them",ar:"تحدث مع شخصيات ذكاء اصطناعي مخصصة وتعلم منها",icon:"🤖",color:"#8b5cf6",tagEn:"Chat",tagAr:"محادثة",tagColor:"rgba(139,92,246,0.15)",tagText:"#8b5cf6",category:"chat",url:"https://character.ai",badgeEn:"Free",badgeAr:"مجاني"},
 ];
 
+const categories = {
+  en:[{k:'all',l:'🌐 All'},{k:'writing',l:'✍️ Writing'},{k:'image',l:'🎨 Images'},{k:'video',l:'🎬 Video'},{k:'audio',l:'🎵 Audio'},{k:'code',l:'💻 Code'},{k:'chat',l:'💬 Chat'},{k:'design',l:'🖌️ Design'},{k:'productivity',l:'⚡ Productivity'},{k:'research',l:'🔬 Research'}],
+  ar:[{k:'all',l:'🌐 الكل'},{k:'writing',l:'✍️ كتابة'},{k:'image',l:'🎨 صور'},{k:'video',l:'🎬 فيديو'},{k:'audio',l:'🎵 صوت'},{k:'code',l:'💻 كود'},{k:'chat',l:'💬 محادثة'},{k:'design',l:'🖌️ تصميم'},{k:'productivity',l:'⚡ إنتاجية'},{k:'research',l:'🔬 بحث'}]
+};
+
+let lang = 'en';
 let currentFilter = 'all';
 
-function filterTools(cat) {
+function toggleLang() {
+  lang = lang === 'en' ? 'ar' : 'en';
+  document.body.classList.toggle('ar', lang === 'ar');
+  document.querySelector('.lang-toggle').textContent = lang === 'en' ? '🌐 العربية' : '🌐 English';
+  document.querySelectorAll('[data-en]').forEach(el => {
+    el.innerHTML = el.getAttribute('data-' + lang);
+  });
+  renderCategories();
+  renderTools();
+}
+
+function filterTools(cat, btn) {
   currentFilter = cat;
   document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
-  event.target.classList.add('active');
+  btn.classList.add('active');
   renderTools();
+}
+
+function renderCategories() {
+  const cont = document.getElementById('tools');
+  cont.innerHTML = categories[lang].map(c =>
+    `<button class="cat-btn${c.k===currentFilter?' active':''}" onclick="filterTools('${c.k}',this)">${c.l}</button>`
+  ).join('');
 }
 
 function renderTools() {
@@ -192,21 +201,21 @@ function renderTools() {
         <div class="tool-icon-wrap" style="background:${t.tagColor}">
           <span>${t.icon}</span>
         </div>
-        <div class="tool-meta">
+        <div>
           <div class="tool-name">${t.name}</div>
-          <span class="tool-tag" style="background:${t.tagColor};color:${t.tagText}">${t.tag}</span>
+          <span class="tool-tag" style="background:${t.tagColor};color:${t.tagText}">${lang==='en'?t.tagEn:t.tagAr}</span>
         </div>
       </div>
-      <p class="tool-desc">${t.desc}</p>
+      <p class="tool-desc">${lang==='en'?t.en:t.ar}</p>
       <div class="tool-footer">
-        <span class="tool-badge">${t.badge === 'مجاني' ? '✅ '+t.badge : '💎 '+t.badge}</span>
-        <a href="${t.url}" target="_blank" class="tool-btn">جرب الآن ←</a>
+        <span class="tool-badge">${(lang==='en'?t.badgeEn:t.badgeAr)==='Free'||'مجاني'?'✅ ':'💎 '}${lang==='en'?t.badgeEn:t.badgeAr}</span>
+        <a href="${t.url}" target="_blank" class="tool-btn">${lang==='en'?'Try Now →':'جرب الآن ←'}</a>
       </div>
     </div>
   `).join('');
 }
 
-document.head.insertAdjacentHTML('beforeend',`<style>@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}</style>`);
+renderCategories();
 renderTools();
 </script>
 </body>
